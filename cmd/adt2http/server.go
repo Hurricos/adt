@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/GeertJohan/go.rice"
-	"github.com/tmc/adt"
+	"github.com/Hurricos/adt"
 )
 
 var startTime = time.Now()

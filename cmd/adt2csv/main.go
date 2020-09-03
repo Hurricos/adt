@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tmc/adt"
+	"github.com/Hurricos/adt"
 )
 
 var (

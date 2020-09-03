@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/tmc/adt"
+	"github.com/Hurricos/adt"
 )
 
 var flagFile = flag.String("f", "", "path to ADT file")

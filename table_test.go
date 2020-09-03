@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/tmc/adt"
+	"github.com/Hurricos/adt"
 )
 
 func TestTableRead(t *testing.T) {

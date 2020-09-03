@@ -13,7 +13,7 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 	"github.com/jmoiron/sqlx"
-	"github.com/tmc/adt"
+	"github.com/Hurricos/adt"
 )
 
 var (
