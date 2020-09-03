@@ -15,7 +15,7 @@ const (
 	ColumnTypeDate          ColumnType = 3
 	ColumnTypeTime          ColumnType = 13
 	ColumnTypeTimestamp     ColumnType = 14
-	ColumnTypeCurrency      ColumnType = 17
+	ColumnTypeCurrency      ColumnType = 18
 )
 
 type MemoField struct {
