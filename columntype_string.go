@@ -20,20 +20,22 @@ func _() {
 	_ = x[ColumnTypeDate-3]
 	_ = x[ColumnTypeTime-13]
 	_ = x[ColumnTypeTimestamp-14]
-	_ = x[ColumnTypeCurrency-18]
+	_ = x[ColumnTypeCurrency-17]
+	_ = x[ColumnTypeMoney-18]
 }
 
 const (
 	_ColumnType_name_0 = "ColumnTypeBool"
 	_ColumnType_name_1 = "ColumnTypeDateColumnTypeCharacterColumnTypeMemoColumnTypeBlob"
 	_ColumnType_name_2 = "ColumnTypeDoubleColumnTypeIntColumnTypeShortIntColumnTypeTimeColumnTypeTimestampColumnTypeAutoIncrement"
-	_ColumnType_name_3 = "ColumnTypeCurrency"
+	_ColumnType_name_3 = "ColumnTypeCurrencyColumnTypeMoney"
 	_ColumnType_name_4 = "ColumnTypeCiCharacter"
 )
 
 var (
 	_ColumnType_index_1 = [...]uint8{0, 14, 33, 47, 61}
 	_ColumnType_index_2 = [...]uint8{0, 16, 29, 47, 61, 80, 103}
+	_ColumnType_index_3 = [...]uint8{0, 18, 33}
 )
 
 func (i ColumnType) String() string {
@@ -46,8 +48,9 @@ func (i ColumnType) String() string {
 	case 10 <= i && i <= 15:
 		i -= 10
 		return _ColumnType_name_2[_ColumnType_index_2[i]:_ColumnType_index_2[i+1]]
-	case i == 18:
-		return _ColumnType_name_3
+	case 17 <= i && i <= 18:
+		i -= 17
+		return _ColumnType_name_3[_ColumnType_index_3[i]:_ColumnType_index_3[i+1]]
 	case i == 20:
 		return _ColumnType_name_4
 	default:
