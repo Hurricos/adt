@@ -209,6 +209,8 @@ func ReadValue(src []byte, column *Column) (interface{}, error) {
 		return value, nil
 	case ColumnTypeCurrency:
 		fallthrough
+	case ColumnTypeMoney:
+		fallthrough
 	case ColumnTypeDouble:
 		buf := src[column.Offset : column.Offset+column.Length]
 		var value float64

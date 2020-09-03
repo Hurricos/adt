@@ -15,7 +15,8 @@ const (
 	ColumnTypeDate          ColumnType = 3
 	ColumnTypeTime          ColumnType = 13
 	ColumnTypeTimestamp     ColumnType = 14
-	ColumnTypeCurrency      ColumnType = 18
+	ColumnTypeCurrency      ColumnType = 17
+	ColumnTypeMoney         ColumnType = 18
 )
 
 type MemoField struct {
@@ -37,6 +38,7 @@ var sqlTypes = map[ColumnType]string{
 	ColumnTypeTime:          "TIME",
 	ColumnTypeTimestamp:     "DATETIME",
 	ColumnTypeCurrency:      "DECIMAL(65,4)",
+	ColumnTypeMoney:         "DECIMAL(33,2)",
 }
 
 func (ct ColumnType) SQLType() string {
